@@ -1,4 +1,4 @@
-# ZIO Pekko Cluster
+# ZIO Pekko
 
 The [ZIO Pekko](https://github.com/bitlap/zio-pekko) library is a ZIO wrapper on [Apache Pekko](https://pekko.apache.org//what-is-pekko.html). 
 
