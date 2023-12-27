@@ -13,8 +13,7 @@ inThisBuild(
     crossScalaVersions       := allScala,
     Test / parallelExecution := false,
     Test / fork              := true,
-    pgpPublicRing            := file("/tmp/public.asc"),
-    pgpSecretRing            := file("/tmp/secret.asc"),
+    sonatypeCredentialHost   := "s01.oss.sonatype.org",
     scmInfo                  := Some(
       ScmInfo(url("https://github.com/bitlap/zio-pekko"), "scm:git:git@github.com:bitlap/zio-pekko.git")
     ),

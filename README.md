@@ -4,7 +4,7 @@ The [ZIO Pekko](https://github.com/bitlap/zio-pekko) library is a ZIO wrapper on
 
 [![Experimental](https://img.shields.io/badge/Project%20Stage-Experimental-orange.svg)](https://github.com/bitlap/bitlap/wiki/Project-Stages) 
 ![CI Badge](https://github.com/bitlap/zio-pekko/workflows/CI/badge.svg) 
-[![Sonatype Releases](https://img.shields.io/nexus/r/https/s01.oss.sonatype.org/org.bitlap/zio-pekko_3.svg?label=Sonatype%20Release)](https://s01.oss.sonatype.org/content/repositories/releases/org/bitlap/zio-pekko_3/) 
+[![Sonatype Releases](https://index.scala-lang.org/bitlap/zio-pekko/zio-pekko-cluster/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/bitlap/zio-pekko/zio-pekko-cluster/) 
 [![Sonatype Snapshots](https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/org.bitlap/zio-pekko_3.svg?label=Sonatype%20Snapshot)](https://s01.oss.sonatype.org/content/repositories/snapshots/org/bitlap/zio-pekko_3/)
 
 ## Introduction
@@ -111,7 +111,7 @@ def listen(topic: String, group: Option[String] = None): Task[Queue[A]] =
 **Note on Serialization**
 Pekko messages are serialized when they are sent across the network. By default, Java serialization is used but it is not recommended to use it in production.
 See [Pekko Documentation](https://pekko.apache.org/docs/pekko/current/serialization.html) to see how to provide your own serializer.
-This library wraps messages inside of a `zio.pekko.cluster.pubsub.MessageEnvelope` case class, so your serializer needs to cover it as well.
+This library wraps messages inside a `zio.pekko.cluster.pubsub.MessageEnvelope` case class, so your serializer needs to cover it as well.
 
 ### Example:
 
@@ -179,7 +179,7 @@ def passivate(entityId: String): Task[Unit]
 **Note on Serialization**
 Pekko messages are serialized when they are sent across the network. By default, Java serialization is used, but it is not recommended in production.
 See [Pekko Documentation](https://pekko.apache.org/docs/pekko/current/serialization.html) to see how to provide your own serializer.
-This library wraps messages inside of a `zio.pekko.cluster.sharding.MessageEnvelope` case class, so your serializer needs to cover it as well.
+This library wraps messages inside a `zio.pekko.cluster.sharding.MessageEnvelope` case class, so your serializer needs to cover it as well.
 
 ### Example:
 
