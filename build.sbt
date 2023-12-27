@@ -39,7 +39,12 @@ inThisBuild(
 )
 
 lazy val `zio-pekko` =
-  project.in(file(".")).aggregate(`zio-pekko-cluster`)
+  project
+    .in(file("."))
+    .settings(
+      publish / skip := true
+    )
+    .aggregate(`zio-pekko-cluster`)
 
 lazy val `zio-pekko-cluster` = project
   .in(file("zio-pekko-cluster"))
