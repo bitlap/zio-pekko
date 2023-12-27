@@ -25,7 +25,7 @@ it is useful to use _Pekko Cluster Sharding_ to distribute our entities to multi
 In order to use this library, we need to add the following line in our `build.sbt` file:
 
 ```scala
-libraryDependencies += "org.bitlap" %% "zio-pekko-cluster" % "0.3.0"
+libraryDependencies += "org.bitlap" %% "zio-pekko-cluster" % "latest version"
 ```
 
 In order to use the library, you need to provide an `ActorSystem`. Refer to the [Pekko Documentation](https://pekko.apache.org/docs/pekko/current/general/actor-systems.html) if you need help.
