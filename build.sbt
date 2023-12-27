@@ -8,12 +8,13 @@ inThisBuild(
   List(
     organization             := "org.bitlap",
     homepage                 := Some(url("https://github.com/bitlap/zio-pekko")),
-    licenses                 := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")),
+    licenses                 := List("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0")),
     scalaVersion             := mainScala,
     crossScalaVersions       := allScala,
     Test / parallelExecution := false,
     Test / fork              := true,
     sonatypeCredentialHost   := "s01.oss.sonatype.org",
+    sonatypeRepository       := "https://s01.oss.sonatype.org/service/local",
     scmInfo                  := Some(
       ScmInfo(url("https://github.com/bitlap/zio-pekko"), "scm:git:git@github.com:bitlap/zio-pekko.git")
     ),
@@ -51,8 +52,6 @@ lazy val `zio-pekko-cluster` = project
       "org.apache.pekko" %% "pekko-cluster-sharding" % pekkoVersion,
       "dev.zio"          %% "zio-test"               % zioVersion % "test",
       "dev.zio"          %% "zio-test-sbt"           % zioVersion % "test"
-//      compilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.2" cross CrossVersion.full),
-//      compilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1")
     ),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
   )
