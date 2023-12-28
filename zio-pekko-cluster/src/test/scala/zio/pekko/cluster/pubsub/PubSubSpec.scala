@@ -1,6 +1,6 @@
 package zio.pekko.cluster.pubsub
 
-import zio._
+import zio.{ Config => _, _ }
 import zio.test._
 import zio.test.Assertion._
 import zio.test.TestEnvironment
