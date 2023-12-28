@@ -1,8 +1,8 @@
 package zio.pekko.cluster
 
-import zio.{ Exit, Queue, Runtime, Unsafe, ZIO }
+import zio._
 
-import org.apache.pekko.actor.{ Actor, ActorSystem, Address, PoisonPill, Props }
+import org.apache.pekko.actor._
 import org.apache.pekko.cluster.{ Cluster => PekkoCluster }
 import org.apache.pekko.cluster.ClusterEvent._
 
@@ -72,7 +72,7 @@ object Cluster {
     initialStateAsEvents: Boolean
   ) extends Actor {
 
-    val initialState: SubscriptionInitialStateMode =
+    private val initialState: SubscriptionInitialStateMode =
       if (initialStateAsEvents) InitialStateAsEvents else InitialStateAsSnapshot
     PekkoCluster(context.system).subscribe(self, initialState, classOf[ClusterDomainEvent])
 

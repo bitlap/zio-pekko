@@ -2,7 +2,7 @@ package zio.pekko.cluster
 
 import scala.concurrent.duration.Duration
 
-import zio.{ Ref, Tag, Task, UIO, URIO, ZIO }
+import zio._
 
 import org.apache.pekko.actor.ActorContext
 

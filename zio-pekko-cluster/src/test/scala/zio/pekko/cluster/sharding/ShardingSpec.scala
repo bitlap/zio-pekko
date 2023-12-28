@@ -3,7 +3,6 @@ package zio.pekko.cluster.sharding
 import scala.language.postfixOps
 
 import zio._
-import zio.{ ExecutionStrategy, Promise, UIO, ZIO, ZLayer }
 import zio.test._
 import zio.test.Assertion._
 import zio.test.TestEnvironment

@@ -1,9 +1,9 @@
 package zio.pekko.cluster.pubsub
 
-import zio.{ Queue, Task, ZIO }
-import zio.pekko.cluster.pubsub.impl.{ PublisherImpl, SubscriberImpl }
+import zio._
+import zio.pekko.cluster.pubsub.impl._
 
-import org.apache.pekko.actor.{ ActorRef, ActorSystem }
+import org.apache.pekko.actor._
 import org.apache.pekko.cluster.pubsub.DistributedPubSub
 
 /**

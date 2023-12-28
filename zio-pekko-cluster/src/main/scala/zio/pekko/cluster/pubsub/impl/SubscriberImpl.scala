@@ -1,10 +1,10 @@
 package zio.pekko.cluster.pubsub.impl
 
-import zio.{ Exit, Promise, Queue, Runtime, Task, Unsafe, ZIO }
-import zio.pekko.cluster.pubsub.{ MessageEnvelope, Subscriber }
+import zio._
+import zio.pekko.cluster.pubsub._
 
 import org.apache.pekko.actor._
-import org.apache.pekko.cluster.pubsub.DistributedPubSubMediator.{ Subscribe, SubscribeAck }
+import org.apache.pekko.cluster.pubsub.DistributedPubSubMediator._
 
 import SubscriberImpl.SubscriberActor
 

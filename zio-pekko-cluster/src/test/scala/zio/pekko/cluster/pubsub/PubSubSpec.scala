@@ -1,12 +1,12 @@
 package zio.pekko.cluster.pubsub
 
-import zio.{ ExecutionStrategy, ZIO, ZLayer }
+import zio._
 import zio.test._
 import zio.test.Assertion._
 import zio.test.TestEnvironment
 import zio.test.ZIOSpecDefault
 
-import com.typesafe.config.{ Config, ConfigFactory }
+import com.typesafe.config._
 
 import org.apache.pekko.actor.ActorSystem
 
