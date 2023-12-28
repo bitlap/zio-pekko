@@ -3,8 +3,8 @@
 The [ZIO Pekko](https://github.com/bitlap/zio-pekko) library is a ZIO wrapper on [Apache Pekko](https://pekko.apache.org//what-is-pekko.html). 
 
 [![Experimental](https://img.shields.io/badge/Project%20Stage-Experimental-orange.svg)](https://github.com/bitlap/bitlap/wiki/Project-Stages) 
-![CI Badge](https://github.com/bitlap/zio-pekko/workflows/CI/badge.svg) 
-[![Releases](https://img.shields.io/nexus/r/https/s01.oss.sonatype.org/org.bitlap/zio-pekko-cluster_3.svg?label=Release)](https://s01.oss.sonatype.org/content/repositories/releases/org/bitlap/zio-pekko-cluster_3/)
+![CI Badge](https://github.com/bitlap/zio-pekko/workflows/CI/badge.svg)
+[![Releases](https://index.scala-lang.org/bitlap/zio-pekko/zio-pekko-cluster/latest-by-scala-version.svg?platform=jvm)](https://index.scala-lang.org/bitlap/zio-pekko/zio-pekko-cluster/)
 [![Snapshots](https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/org.bitlap/zio-pekko-cluster_3.svg?label=Snapshot)](https://s01.oss.sonatype.org/content/repositories/snapshots/org/bitlap/zio-pekko-cluster_3/)
 
 ## Introduction
